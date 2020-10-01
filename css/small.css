@@ -1,0 +1,32 @@
+header {
+    background-color:#26547C;
+    font-size: 1.5;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 32px;
+}
+
+footer {
+    background-color:#809848;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 28px;
+    font-family: 'Roboto', sans-serif;
+
+img {
+    max-width: 100%;
+    width: 150px;
+    float: center;
+}
+
+h1 {
+    color:white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main {
+    padding: 32px;
+    font-size: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
