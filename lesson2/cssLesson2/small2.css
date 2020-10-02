@@ -14,20 +14,19 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    width: 150px;
-    float: center;
-}
-
 h1 {
     color:white;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+img {
+    width:100px;
+}
+
 main {
+    display:grid;
     padding: 32px;
     font-size: 1;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
-
