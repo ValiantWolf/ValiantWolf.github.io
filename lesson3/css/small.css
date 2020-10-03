@@ -3,25 +3,15 @@ header {
     font-size: 1.5;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 32px;
-    max-width: 900px;
-    margin: 1em auto 0;
+    padding: 10px;
 }
 
 footer {
     background-color:#809848;
-    font-size: 1.2em;
+    font-size: 1.2;
     text-align: center;
-    padding: 28px;
+    padding: 10px;
     font-family: 'Roboto', sans-serif;
-    max-width: 900px;
-    margin: 0 auto 1em;
-}
-
-img {
-    max-width: 100%;
-    width: 150px;
-    float: center;
 }
 
 h1 {
@@ -30,11 +20,24 @@ h1 {
 }
 
 main {
-    margin: 1em;
+    display:grid;
     padding: 32px;
     font-size: 1;
     font-family: 'Roboto', sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
+    text-align: center;
 }
-
+nav ul {
+    list-style: none;
+    display: grid;
+    text-align:center;
+    background-color:#809848;
+    padding: 10px;
+}
+nav a:hover { 
+    color: white;
+    background: #26547C;
+    padding: 10px 20px;
+}
+a:link {
+    font-size:1.1em;
+}
