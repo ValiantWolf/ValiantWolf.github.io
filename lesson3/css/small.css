@@ -18,26 +18,49 @@ h1 {
     color:white;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-
 main {
     display:grid;
     padding: 32px;
     font-size: 1;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
+}
+nav{
+    background-color:#809848;
+    text-align:center;
+    padding: 10px;
 }
 nav ul {
     list-style: none;
-    display: grid;
-    text-align:center;
-    background-color:#809848;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li a{
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
 }
 nav a:hover { 
     color: white;
     background: #26547C;
-    padding: 10px 20px;
 }
-a:link {
-    font-size:1.1em;
+img {
+    max-width: 100%;
+    width: 150px;
+    float: left;
 }
+.background {
+    background-color: White;
+  }
+  .primary {
+    background-color: #26547C;
+  }
+  .secondary {
+    background-color: #809848;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-radius: 4px;
+  }
