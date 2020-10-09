@@ -1,33 +1,52 @@
 @media only screen and (min-width: 32.5em) {
-    h1 {
-        font-size: 2.5
+    body {
+        font-size: 1em;
     }
-
-    header{
+    h1 {
+        font-size: 9.5;
+    }
+    header {
         border-radius: 1em 1em 0 0;
-        text-align: center;
         max-width: 700px;
         margin: 1em auto 0;
     }
-    footer{
+    footer {
         border-radius: 1em;
         max-width: 700px;
         margin: 0 auto 1em;
     }
-    nav{
+    nav {
         max-width: 700px;
         margin: 0 auto;
         border-radius: 0 0 1em 1em;
     }
-    nav ul{
+    nav ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
-    nav a:hover { 
-        border-radius: 1em;
-    }
-    main{
+    main {
         max-width: 700px;
         margin: 0 auto;
     }
+    .navigation li:nth-child(2) a:hover {
+        border-radius: 0 0 0 1em;
+    }
+    .navigation li:last-child a:hover {
+        border-radius: 0 0 1em 0;
+    }
+
+    /* from ham codepen */
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
 }

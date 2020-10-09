@@ -8,16 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
-    <link href="css/large.css" rel="stylesheet" />    
+    <link href="css/large.css" rel="stylesheet" />   
     <title>Weather Boi</title>
 </head>
 <body>
     <header>
-        <img src="assets/Weather Boi.png" alt="Logo" class="Logo">
-        <h1>Weather Boi</h1>
+        <img src="assets/Weather Boi.png" alt="Logo" class="logo">
+        <div>
+            <h1>Weather Boi</h1>
+            <p>Never be surprised again.</p>
+        </div>
     </header>
     <nav>
-        <ul class= "nav">
+        <ul class= "navigation">
             <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
@@ -41,5 +44,6 @@
     <br>
     Last Date Updated: <span id="currentdate"></span>
 </footer>
-<script src="date.js"></script>
+<script src="js/date.js"></script>
+<script src="js/ham.js"></script>
 </html>
