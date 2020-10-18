@@ -16,7 +16,10 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <title>Weather Boi</title>
 </head>
-<body>
+<body onload="showPancake();">
+    <div id="pancake">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
     <header>
         <img src="assets/weatherBoi.png" alt="Logo" class="logo">
         <div>
@@ -28,7 +31,7 @@
         <ul class= "navigation">
             <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson5/index.html">Preston</a></li>
+            <li class= "active"><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson5/index.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -38,22 +41,89 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="heroWeather">
-            <p>placeholder</p>
+            <img src="assets/hero.jpg" alt="hero image" class="hero">
+            <section class= "weatherSum">
+                <h3>Weather Summary</h3>
+                <table class="weatherTable">
+                    <tbody>
+                        <tr>
+                            <td class="righty">Currently:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td class="righty">High:</td>
+                            <td>76°</td>
+                        </tr>
+                        <tr>
+                            <td class="righty">Wind Chill:</td>
+                            <td>71°</td>
+                        </tr>
+                        <tr>
+                            <td class="righty">Humidity:</td>
+                            <td>69%</td>
+                        </tr>
+                        <tr>
+                            <td class="righty">Wind Speed:</td>
+                            <td>5 mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
         <div class="fiveDay">
-            placeholder
+            <h3>Five Day Forecast</h3>
+            <table class="fiveTable">
+                <thead>
+                    <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>80°</p>
+                            <img src="assets/sun.png" alt="sunny">
+                        </td>
+                        <td>
+                            <p>80°</p>
+                            <img src="assets/sun.png" alt="sunny">
+                        </td>
+                        <td>
+                            <p>80°</p>
+                            <img src="assets/sun.png" alt="sunny">
+                        </td>
+                        <td>
+                            <p>80°</p>
+                            <img src="assets/sun.png" alt="sunny">
+                        </td>
+                        <td>
+                            <p>80°</p>
+                            <img src="assets/sun.png" alt="sunny">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <h3>Article Title</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita tempore maiores ipsa ratione tempora molestias consequatur, labore eum voluptate earum, quod quibusdam voluptatem consectetur qui? Voluptates, distinctio, voluptatem aut delectus exercitationem officiis blanditiis labore quis suscipit in eum, illo vero. Dolorum veritatis dolor veniam saepe porro. Magni ab quas id in tempora laudantium, sint possimus vitae cupiditate libero recusandae sit. Tempore vitae recusandae adipisci eos hic eius ullam aperiam consequatur exercitationem natus laudantium tenetur ab necessitatibus repellendus, ducimus, ipsum placeat dolorum modi blanditiis porro neque. Aut nostrum eum vitae architecto atque, delectus amet dolorum? Recusandae dolores explicabo eveniet odit.</p>
         
     </main>
-
     <footer>
         <div class="contact">
-            <h3>Contact Information</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam provident, reprehenderit reiciendis error harum dolor accusamus dicta numquam molestiae officia corporis ex dolorum assumenda nostrum optio! Eos, illum. Natus.</p>
-        </div><!-- I hate 
-        whitespace--><div class=footer>
+            <img src="assets/map.jpg" alt="Location Map" class="map">
+            <ul class="info">
+                <li><b>Contact Information</b></li>
+                <li>Address: 1000 fake street</li>
+                <li>Phone number: (555) 555-5555</li>
+                <li>Email: totallyrealemail@fakeEmail.com</li>
+            </ul>
+            
+        </div>
+        <div class=footer>
             &copy;2020 | Samuel Witt | Idaho |
             <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
             <br>
@@ -63,5 +133,6 @@
     </footer>
     <script src="js/date.js"></script>
     <script src="js/ham.js"></script>
+    <script src="js/pancake.js"></script>
 </body>
 </html>

@@ -7,6 +7,14 @@ header {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+.logo {
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    margin: 0;
+    
+}
 header div {
     margin: auto;
 }
@@ -14,11 +22,11 @@ header p {
     margin-top: 0;
 }
 footer {
+    display: grid;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 .contact{
-    display: flex;
     background-color: #B9CB90;
 }
 .footer{
@@ -41,13 +49,68 @@ nav ul {
     padding: 0;
     overflow: hidden;
 }
-.logo {
+.map {
     max-width: 100%;
-    width: 100px;
-    height: auto;
+    width: 300px;
+    height: 150px;
     padding: 10px;
     margin: 0;
     
+}
+.info {
+    text-align: center;
+    list-style: none;
+}
+.hero {
+    max-width: 100%;
+}
+.weatherSum {
+ background-color:#B9CB90;
+ border: 1px solid #000;
+}
+.weatherSum h3 {
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+.weatherTable {
+    table-layout: fixed;
+    width: 100%;
+}
+.righty{
+    font-weight: bold;
+    text-align: right;
+}
+#pancake {
+    max-width: 900px;
+    margin: 1em auto;
+    display: none;
+    text-align: center;
+    background-color: #B9CB90;
+}
+#pancake p {
+    margin: 0px;
+    padding: 2px;
+    font-weight: bold;
+}
+.fiveDay {
+    width: 100%;
+    text-align: center;
+}
+.fiveTable {
+    width: 100%;
+    margin: auto;
+}
+.fiveTable th {
+    background-color: #809848;
+}
+.fiveTable td {
+    background-color: #B9CB90;
+}
+.fiveTable, .fiveTable th, .fiveTable td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
 }
 /* from ham codepen */
 nav {
@@ -66,7 +129,7 @@ nav {
 	display: none;
 }
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
     color: white;
 }
 .navigation a {
