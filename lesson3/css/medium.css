@@ -19,10 +19,15 @@
         margin: 0 auto;
         border-radius: 0 0 1em 1em;
     }
-    nav ul{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
+    .nav {
+		display: flex;
+	}
+	.nav li {
+		flex: 1 1 auto;
+	}
+	.nav a {
+		text-align: center;
+	}
     nav a:hover { 
         border-radius: 1em;
     }
