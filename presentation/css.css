@@ -2,10 +2,12 @@ body {
     max-width: 900px;
     margin: auto;
 }
-.corner {
+.corner, .shadow {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.radius, .linear, .radial{
+.radius, .linear, .swanky{
     width: 300px;
     height: 300px;
     display: flex;
@@ -14,25 +16,50 @@ body {
     margin: 1em;
     color: white;
 }
+.boxBack1, .boxBack2, .boxBack3, .boxBack4, .boxBack5 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 4px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+}
+.box1, .box2, .box3, .box4, .box5 {
+    width: 100px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color:lightblue;
+}
 
 /* Corner CSS */
 .radius {
     background-color: red;
     border-radius: 5px 50px 15px 150px;
-    
+    border-style: solid;
+    border-color: black;
+}
+.swanky {
+    background-color: blue;
+    border-radius: 50% 20% / 10% 40%;
+    border-style: solid;
+    border-color: black;
 }
 .linear {
     background: linear-gradient(135deg, transparent 45px, green 0) top left,
-    linear-gradient(-135deg, transparent 45px, green 0) top right,
-    linear-gradient(45deg, transparent 45px, green 0) bottom left,
+    linear-gradient(-135deg, transparent 75px, darkgreen 0) top right,
+    linear-gradient(45deg, transparent 10px, darkgreen 0) bottom left,
     linear-gradient(-45deg, transparent 45px, green 0) bottom right;
     background-size: 50% 50%;
     background-repeat: no-repeat;
+    border-style: solid;
+    border-color: black;
 }
-.radial {
-    background: radial-gradient(circle at top left, transparent 45px, blue 0);
-}
-
 
 /* Boarder CSS */
 /* Copied from W3schools border page */
@@ -46,7 +73,21 @@ p.groove {border-style: groove; border-width: 10px; border-color:green;}
 p.ridge {border-style: ridge; border-width: 10px; border-color:green;}
 p.inset {border-style: inset; border-width: 10px; border-color:green;}
 p.outset {border-style: outset; border-width: 10px; border-color:green;}
-
 p.mix {border-style: dotted dashed solid double;}
 
 /* Shadow CSS */
+.box1{
+    box-shadow: 12px 8px;
+}
+.box2{
+    box-shadow: 12px 8px 8px;
+}
+.box3{
+    box-shadow: 12px 8px 8px 4px;
+}
+.box4{
+    box-shadow: 12px 8px 8px 4px blue;
+}
+.box5{
+    box-shadow: inset 6px 4px 4px;
+}
