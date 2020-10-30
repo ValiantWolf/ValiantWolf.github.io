@@ -22,16 +22,10 @@ header p {
     margin-top: 0;
 }
 footer {
-    display: grid;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-}
-.contact{
-    background-color: #B9CB90;
-}
-.footer{
     background-color: #809848;
-    margin-bottom: 1em;
+    margin: 0 auto 1em;
 }
 h1 {
     color:white;
@@ -49,38 +43,6 @@ nav ul {
     padding: 0;
     overflow: hidden;
 }
-.map {
-    max-width: 100%;
-    width: 300px;
-    height: 150px;
-    padding: 10px;
-    margin: 0;
-    
-}
-.info {
-    text-align: center;
-    list-style: none;
-}
-.hero {
-    margin: auto;
-    max-width: 100%;
-}
-.weatherSum {
- background-color:#B9CB90;
- border: 1px solid #000;
-}
-.weatherSum h3 {
-    text-align: center;
-    margin: 0 0 8px 0;
-}
-.weatherTable {
-    table-layout: fixed;
-    width: 100%;
-}
-.righty{
-    font-weight: bold;
-    text-align: right;
-}
 #pancake {
     max-width: 900px;
     margin: 1em auto;
@@ -93,30 +55,9 @@ nav ul {
     padding: 2px;
     font-weight: bold;
 }
-.fiveDay {
-    width: 100%;
-    text-align: center;
-}
-.fiveTable {
-    width: 100%;
-    margin: auto;
-}
-.fiveTable th {
-    background-color: #809848;
-}
-.fiveTable td {
-    background-color: #B9CB90;
-}
-.fiveTable, .fiveTable th, .fiveTable td{
-    text-align: center;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 5px;
-}
 /* from ham codepen */
 nav {
 	margin: 0 auto;
-	max-width: 760px;
     background-color: #809848;
 }
 .navigation {

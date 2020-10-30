@@ -6,11 +6,7 @@
         width: 150px;
         height: auto;
     }
-    .map {
-        width: 300px;
-        height: 150px;
-    }
-    header, footer, nav, main {
+    header, footer, nav, main, #pancake{
         max-width: 900px;
     }
 }

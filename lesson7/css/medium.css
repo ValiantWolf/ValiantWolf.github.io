@@ -2,33 +2,17 @@
     body {
         font-size: 1em;
     }
+    header, nav, footer, main, #pancake {
+        max-width: 650px;
+    }
     header {
         border-radius: 1em 1em 0 0;
-        max-width: 650px;
         margin: 1em auto 0;
     }
-    .contact{
-        display: flex;
-        border-radius: 1em 1em 0 0;
-    }
-    .footer{
-        border-radius: 0 0 1em 1em;
-    }
     footer {
-        max-width: 650px;
-        margin: 0 auto;
-    }
-    .map {
-        /* fix diss */
-        width: 200px;
-        height: 100px;
-        border-radius: 1em 0 0 0;
-    }
-    .info {
-        text-align: left;
+        border-radius: 1em;
     }
     nav {
-        max-width: 650px;
         margin: 0 auto;
         border-radius: 0 0 1em 1em;
     }
@@ -37,7 +21,6 @@
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
     main {
-        max-width: 650px;
         margin: 0 auto;
     }
     .navigation li:nth-child(2) a:hover {
@@ -45,23 +28,6 @@
     }
     .navigation li:last-child a:hover {
         border-radius: 0 0 1em 0;
-    }
-    /* from overlay example codepen */
-    .weatherTable {
-        table-layout: auto;
-    }
-    .heroWeather {
-        margin: 0 auto;position: relative;
-    }
-    .weatherSum {
-        position: absolute;
-        top: 10px;
-        left: 25px;
-        background: radial-gradient(#eee, #B9CB90);
-        border: 1px solid #000;
-        padding: 10px 1.5rem;
-        box-shadow: 0 0 30px #111;
-        opacity: .8;
     }
     #pancake {
         border-radius: 1em;
