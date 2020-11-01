@@ -33,9 +33,20 @@ h1 {
     margin-bottom: 0;
 }
 main {
-    display:grid;
+    display:block;
     padding: 2em;
     font-family: 'Roboto', sans-serif;
+}
+main figure{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+main figure img{
+    width:100%;
+}
+main h2{
+    text-align: center;
 }
 nav ul {
     list-style: none;
