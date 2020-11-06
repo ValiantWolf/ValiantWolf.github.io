@@ -1,0 +1,40 @@
+body {
+    font-family: Ubuntu, sans-serif;
+    margin: auto;
+}
+body table {
+    margin: 1em auto;
+}
+/* note that the rgba value I used is for the #628ca6 color in our color scheme */
+table {
+    text-align: center;
+    box-shadow: 8px 8px 15px 4px rgba(98, 140, 166, 0.8);
+    background: lightgray;
+}
+th, td {
+    padding: 10px;
+    font-weight: bold;
+}
+th {
+    color: black;
+    background-color: #7fb9c2;
+    font-size: 25px;
+}
+.blue{
+    color: white;
+    background-color: #628ca6;
+    font-size: 1em;
+}
+tbody tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+tbody tr:nth-child(even){
+    color: black;
+    background-color: #e7ffed; 
+}
+tfoot {
+    text-emphasis: bold;
+    color: black;
+    background-color: #7fb9c2;
+    font-size:  12px;
+}
