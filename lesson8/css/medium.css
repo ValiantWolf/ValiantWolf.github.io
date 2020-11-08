@@ -1,0 +1,67 @@
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+    body {
+        font-size: 1em;
+    }
+    
+    
+    /*----------- HEADER --------------*/
+    header, nav, main, footer, #pancake {
+        width: 90%;
+        max-width: 35rem;
+        margin:auto;
+    }
+    
+    header {
+        border-radius: 1em 1em 0 0;
+        margin: 1em auto 0;
+    }
+    
+    
+    /*----------- NAVIGATION --------------*/
+    .navigation {
+		display: flex;
+    }
+
+    nav {
+        margin: 0 auto;
+        border-radius: 0 0 1em 1em;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+    }
+    
+	.navigation a {
+		text-align: center;
+    }
+    
+	.navigation li:first-child {
+		display: none;
+    }
+
+    .navigation li:nth-child(2) a:hover {
+        border-radius: 0 0 0 1em;
+    }
+    
+    .navigation li:last-child a:hover {
+        border-radius: 0 0 1em 0;
+    }
+    /*----------- MAIN --------------*/
+        
+    #pancake {
+        border-radius: 1em;
+    }
+    /*----------- FOOTER --------------*/
+    footer {
+        border-radius: 1em;
+    }    
+    } /* end of media query */

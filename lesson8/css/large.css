@@ -1,0 +1,34 @@
+@media only screen and (min-width: 64rem) {
+
+    
+
+/*----------- BODY --------------*/
+body {
+    font-size: 1.1em;
+}
+
+header, nav, main, footer, #pancake {
+    max-width: 64rem;
+}
+
+/*----------- HEADER --------------*/
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+form label.sbs {
+    padding: .4rem 0;
+}
+form fieldset {
+    max-width: 800px;
+}
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
