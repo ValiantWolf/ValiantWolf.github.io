@@ -1,3 +1,3 @@
-function thanks() {
+function thanksYou() {
     window.location.href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson8/thanks.html";
 }
