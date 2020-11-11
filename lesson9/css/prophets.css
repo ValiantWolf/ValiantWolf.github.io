@@ -1,0 +1,49 @@
+:root {
+    font-family: 'Overpass', serif;
+}
+body {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'Bree Serif';
+    font-weight: bold;
+    color: #4e4e97;
+}
+.cards {
+    width: 100%;
+    margin: auto;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+ section {
+    margin: 1rem;
+    background-color: #b9b9cc;
+    border: 2px solid #4e4e97;
+}
+img {
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.7);
+}
+footer {
+    text-align: center;
+    margin: 20px 0;    
+    color: #4e4e97;
+    font-weight: bold;
+}
+@media only screen and (min-width: 35rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        max-width: 96%;
+        box-shadow: 0 0 5px 3px darkgrey;
+    }
+}
+@media only screen and (min-width: 64rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
