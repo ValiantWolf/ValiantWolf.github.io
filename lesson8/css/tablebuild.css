@@ -20,7 +20,7 @@ th {
     background-color: #7fb9c2;
     font-size: 25px;
 }
-.blue{
+.blue, thead td {
     color: white;
     background-color: #628ca6;
     font-size: 1em;
