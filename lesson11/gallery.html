@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather Site">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Samuel Witt">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Weather Boi</title>
+</head>
+<body onload="showPancake();">
+    <div id="pancake">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img src="assets/weatherBoi.png" alt="Logo" class="logo">
+        <div>
+            <h1>Weather Boi</h1>
+            <p>Never be surprised again.</p>
+        </div>
+    </header>
+    <nav>
+        <ul class= "navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson6/index.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class= "active"><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Gallery</h2>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/cloudyForest.jpg" alt="Cloudy Forest">
+            <figcaption>Cloudy Forest</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/darkStormClouds.jpg" alt="Dark Storm Clouds">
+            <figcaption>Dark Storm Clouds</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/fog.jpg" alt="Foggy Farm">
+            <figcaption>Foggy Farm</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/foggyForest.jpg" alt="Foggy Forest">
+            <figcaption>Foggy Forest</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/pinkClouds.jpg" alt="Pink Clouds">
+            <figcaption>Pink Clouds</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/stormClouds.jpg" alt="Storm Clouds">
+            <figcaption>Storm Clouds</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/stormLake.jpg" alt="Storm Lake">
+            <figcaption>Storm Lake</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/sunnyWithClouds.jpg" alt="Sunny With Clouds">
+            <figcaption>Sunny With Clouds</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/placeholder300_226.jpg" data-src="assets/thunderstorm.jpg" alt="Thunderstorm">
+            <figcaption>Thunderstorm</figcaption>
+        </figure>
+    </main>
+        
+    <footer>
+        <div class=footer>
+            &copy;2020 | Samuel Witt | Idaho |
+            <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+            <br>
+            Last Date Updated: <span id="currentdate"></span>
+        </div>
+        
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/ham.js"></script>
+    <script src="js/pancake.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Open Sans Condensed', 'Roboto']}});</script>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>

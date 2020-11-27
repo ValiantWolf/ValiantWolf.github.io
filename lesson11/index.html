@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Weather Boi</title>
+</head>
+<body onload="showPancake();">
+    <div id="pancake">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img src="assets/weatherBoi.png" alt="Logo" class="logo">
+        <div>
+            <h1>Weather Boi</h1>
+            <p>Never be surprised again.</p>
+        </div>
+    </header>
+    <nav>
+        <ul class= "navigation">
+            <li><a class="ham" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class= "active"><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson9/index.html">Home</a></li>
+            <li><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson5/index.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://valiantwolf.github.io/ValiantWolf.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="mycontent">
+            <div class="cards"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <img src="assets/map.jpg" alt="Location Map" class="map">
+            <ul class="info">
+                <li><b>Contact Information</b></li>
+                <li>Address: 1000 fake street</li>
+                <li>Phone number: (555) 555-5555</li>
+                <li>Email: totallyrealemail@fakeEmail.com</li>
+            </ul>
+            
+        </div>
+        <div class=footer>
+            &copy;2020 | Samuel Witt | Idaho |
+            <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+            <br>
+            Last Date Updated: <span id="currentdate"></span>
+        </div>
+        
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/ham.js"></script>
+    <script src="js/pancake.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Open Sans Condensed', 'Roboto']}});</script>
+    <script src="js/homeJSON.js"></script>
+</body>
+</html>
