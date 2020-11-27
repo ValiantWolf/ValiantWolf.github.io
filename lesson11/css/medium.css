@@ -28,6 +28,9 @@
 	.navigation li {
 		display: block; /* change state in small view */
         flex: 1 1 auto;
+        font-size: smaller;
+        overflow: hidden;
+        white-space: nowrap;
     }
 	.navigation a {
 		text-align: center;
