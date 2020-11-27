@@ -1,12 +1,75 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35rem) {
+    /*----------- BODY --------------*/
     body {
         font-size: 1em;
     }
+    /*----------- HEADER --------------*/
+    header, nav, main, footer, #pancake {
+        width: 90%;
+        max-width: 35rem;
+        margin:auto;
+    }
     header {
         border-radius: 1em 1em 0 0;
-        max-width: 650px;
         margin: 1em auto 0;
     }
+    /*----------- NAVIGATION --------------*/
+    .navigation {
+		display: flex;
+    }
+    nav {
+        margin: 0 auto;
+        border-radius: 0 0 1em 1em;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+	.navigation li {
+		display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+	.navigation a {
+		text-align: center;
+    }
+	.navigation li:first-child {
+		display: none;
+    }
+    .navigation li:nth-child(2) a:hover {
+        border-radius: 0 0 0 1em;
+    }
+    .navigation li:last-child a:hover {
+        border-radius: 0 0 1em 0;
+    }
+    /*----------- MAIN --------------*/
+    #pancake {
+        border-radius: 1em;
+    }
+    main {
+        padding: 0 2%;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .townsect {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 1em;
+    }
+    .townsect:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .towninfo {
+        width: 100%;
+        text-align: center;
+    }
+    .townimg {
+        width: 40%;
+        margin: 0 1em;
+    }
+    /*----------- FOOTER --------------*/
     .contact{
         display: flex;
         border-radius: 1em 1em 0 0;
@@ -15,7 +78,6 @@
         border-radius: 0 0 1em 1em;
     }
     footer {
-        max-width: 650px;
         margin: 0 auto;
     }
     .map {
@@ -27,57 +89,29 @@
     .info {
         text-align: left;
     }
-    nav {
-        max-width: 650px;
-        margin: 0 auto;
-        border-radius: 0 0 1em 1em;
-    }
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-    main {
-        max-width: 650px;
-        margin: 0 auto;
-    }
-    .navigation li:nth-child(2) a:hover {
-        border-radius: 0 0 0 1em;
-    }
-    .navigation li:last-child a:hover {
-        border-radius: 0 0 1em 0;
-    }
-    /* from overlay example codepen */
-    .weatherTable {
-        table-layout: auto;
-    }
-    .heroWeather {
-        margin: 0 auto;position: relative;
-    }
-    .weatherSum {
-        position: absolute;
-        top: 10px;
-        left: 25px;
-        background: radial-gradient(#eee, #B9CB90);
-        border: 1px solid #000;
-        padding: 10px 1.5rem;
-        box-shadow: 0 0 30px #111;
-        opacity: .8;
-    }
-    #pancake {
+    .footerNone {
         border-radius: 1em;
     }
-    /* from ham codepen */
-    .navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
+    /*----- index specific css -----*/
+    /*----- preston specific css -----*/
+    /*----- sodaSprings specific css -----*/
+    /*----- fishHaven specific css -----*/
+    /*----- stormCenter specific css -----*/
+    /*----- gallery specific css -----*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        margin: 0 auto;
     }
-}
+    .gallery h2{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    nav ul li.active3 a {
+        border-radius: 0 0 1em 0;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
+} /* end of media query */
