@@ -93,7 +93,49 @@
         border-radius: 1em;
     }
     /*----- index specific css -----*/
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .townsect {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 1em;
+    }
+    .townsect:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .towninfo {
+        width: 100%;
+        text-align: center;
+    }
+    .townimg {
+        width: 40%;
+        margin: 0 1em;
+    }
+    nav ul li.active2 a {
+        border-radius: 0 0 0 1em;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: white;
+    }
     /*----- preston specific css -----*/
+    .weatherTable {
+        table-layout: auto;
+    }
+    .heroWeather {
+        margin: 0 auto;position: relative;
+    }
+    .weatherSum {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        background: radial-gradient(#eee, #B9CB90);
+        border: 1px solid #000;
+        padding: 10px 1.5rem;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+    }
     /*----- sodaSprings specific css -----*/
     /*----- fishHaven specific css -----*/
     /*----- stormCenter specific css -----*/
