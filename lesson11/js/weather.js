@@ -2,17 +2,13 @@ var currentURL = window.location.href;
 let currentId = "id=5604473";
 if (currentURL.indexOf("preston.html") > 0) {
     currentId = "id=5604473";
-    console.log(1)
 }
-else if (currentId.indexOf("sodaSprings.html") > 0) {
+else if (currentURL.indexOf("sodaSprings.html") > 0) {
     currentId = "id=5607916";
-    console.log(2)
 }
-else if (currentId.indexOf("fishHaven.html") > 0) {
+else if (currentURL.indexOf("fishHaven.html") > 0) {
     currentId = "lat=42.0380399&lon=-111.4048681";
-    console.log(3)
 }
-console.log(currentId)
 
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?" + currentId + "&units=imperial&APPID=4ddd913b063b6a1255cfc4ee2ca37519";
 fetch(apiURL)
@@ -23,6 +19,15 @@ fetch(apiURL)
         document.getElementById('temp').textContent = Math.round(jsObject.main.temp) + "°F";
         document.getElementById('humi').textContent = jsObject.main.humidity + "%";
         document.getElementById('windSpeed').textContent = Math.round(jsObject.wind.speed) + " mph";
+
+        let t = parseFloat(jsObject.main.temp);
+        let s = parseFloat(jsObject.wind.speed);
+        let windChill = "N/A";
+        if(t <= 50 && s >= 3){
+            let compute = 35.74+0.6215*t-35.75*Math.pow(s,0.16)+0.4275*t*Math.pow(s,0.16);
+            windChill = Math.round(compute) + "°F";
+        }
+        document.getElementById("windChill").innerHTML = windChill;
 });
 
 const forApi = "https://api.openweathermap.org/data/2.5/forecast?" + currentId + "&units=imperial&APPID=4ddd913b063b6a1255cfc4ee2ca37519";

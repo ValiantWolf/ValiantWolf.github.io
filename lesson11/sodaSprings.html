@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <title>Weather Boi Soda Springs</title>
 </head>
-<body onload="showPancake(); windChill();">
+<body onload="showPancake();">
     <div id="pancake">
         <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
@@ -33,7 +33,7 @@
         </ul>
     </nav>
     <main class="makeEmGrid">
-        <h2>Preston Idaho</h2>
+        <h2>Soda Springs Idaho</h2>
         <div class="heroWeather">
             <picture class="hero">
                 <source srcset="assets/sodaSprings_600.jpg" media="(min-width:520px) and (max-width:959px)">
@@ -53,16 +53,16 @@
                             <td><span id="temp"></span></td>
                         </tr>
                         <tr>
-                            <td class="righty">Wind Chill:</td>
-                            <td><span id="windChill"></span></td>
-                        </tr>
-                        <tr>
                             <td class="righty">Humidity:</td>
                             <td><span id="humi"></span></td>
                         </tr>
                         <tr>
                             <td class="righty">Wind Speed:</td>
                             <td><span id="windSpeed"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="righty">Wind Chill:</td>
+                            <td><span id="windChill"></span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -133,7 +133,6 @@
     <script src="js/ham.js"></script>
     <script src="js/pancake.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/windChill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script> WebFont.load({google: {families: ['Open Sans Condensed', 'Roboto']}});</script>
 </body>
