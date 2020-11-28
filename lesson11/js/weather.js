@@ -1,6 +1,6 @@
 var currentURL = window.location.href;
 let currentId = "id=5604473";
-if (currentURL.indexOf("preston.html") > 1) {
+if (currentURL.indexOf("preston.html") > 0) {
     currentId = "id=5604473";
     console.log(1)
 }
