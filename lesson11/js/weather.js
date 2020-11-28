@@ -1,4 +1,15 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4ddd913b063b6a1255cfc4ee2ca37519";
+var currentURL = window.location.href;
+let currentId = "5604473";
+if (currentURL.indexOf("preston.html") > 0) {
+    currentId = "5604473";
+} else if (currentId.indexOf("sodaSprings.html") > 0) {
+    currentId = "5607916";
+} else if (currentId.indexOf("fishHaven.html") > 0) {
+    currentId = "lat=42.0380399&lon=-111.4048681";
+}
+console.log(currentId)
+
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + currentId + "&units=imperial&APPID=4ddd913b063b6a1255cfc4ee2ca37519";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -9,7 +20,7 @@ fetch(apiURL)
         document.getElementById('windSpeed').textContent = Math.round(jsObject.wind.speed) + " mph";
 });
 
-const forApi = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=4ddd913b063b6a1255cfc4ee2ca37519";
+const forApi = "https://api.openweathermap.org/data/2.5/forecast?id=" + currentId + "&units=imperial&APPID=4ddd913b063b6a1255cfc4ee2ca37519";
 fetch(forApi)
     .then((response) => response.json())
     .then((jsObject) => {
