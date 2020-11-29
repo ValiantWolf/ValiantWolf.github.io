@@ -150,6 +150,9 @@
     /*----- sodaSprings specific css -----*/
     /*----- fishHaven specific css -----*/
     /*----- stormCenter specific css -----*/
+    form fieldset {
+        max-width: 63rem;
+    }
     /*----- gallery specific css -----*/
     .gallery {
         display: grid;
