@@ -163,6 +163,7 @@ footer {
 .footer{
     background-color: #809848;
     margin-bottom: 1em;
+    padding: 1em;
 }
 .map {
     max-width: 100%;
@@ -217,10 +218,26 @@ footer {
 .townsect:nth-child(even) {
     background-color: #B9CB90;
 }
+.article {
+    display: grid;
+    margin: auto;
+    padding: 1em;
+    background-color: #3574AC;
+}
+.articleImg {
+    margin: 1em;
+    max-width: 300px;
+}
+.title {
+    margin-bottom: 0;
+}
+.author {
+    margin-top: 0;
+}
 /*----- preston specific css -----*/
 .hero {
     margin: auto;
-    max-width: 100%;
+    max-width: 0%;
 }
 .weatherSum {
  background-color:#B9CB90;
