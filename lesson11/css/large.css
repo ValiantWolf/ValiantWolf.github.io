@@ -32,6 +32,9 @@
         margin: 0 auto;
     }
     /*----- preston specific css -----*/
+    .events {
+        max-width: 64rem;
+    }
     /*----- sodaSprings specific css -----*/
     /*----- fishHaven specific css -----*/
     /*----- stormCenter specific css -----*/

@@ -219,22 +219,6 @@ footer {
 .townsect:nth-child(even) {
     background-color: #B9CB90;
 }
-.article {
-    display: grid;
-    margin: auto;
-    padding: 1em;
-    background-color: #3574AC;
-}
-.articleImg {
-    margin: 1em;
-    max-width: 300px;
-}
-.title {
-    margin-bottom: 0;
-}
-.author {
-    margin-top: 0;
-}
 /*----- preston specific css -----*/
 .hero {
     margin: auto;
@@ -279,8 +263,28 @@ footer {
 .makeEmGrid {
     display: grid;
 }
-/*----- sodaSprings specific css -----*/
-/*----- fishHaven specific css -----*/
+.events {
+    margin: 1em auto;
+    width: 100%;
+    background-color: #B9CB90;
+    text-align: center;
+}
+.article {
+    display: grid;
+    margin: auto;
+    padding: 1em;
+    background-color: #3574AC;
+}
+.articleImg {
+    margin: 1em;
+    max-width: 300px;
+}
+.title {
+    margin-bottom: 0;
+}
+.author {
+    margin-top: 0;
+}
 /*----- stormCenter specific css -----*/
 form fieldset {
     margin: 0 auto;

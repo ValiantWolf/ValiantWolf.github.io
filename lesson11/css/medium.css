@@ -147,6 +147,10 @@
     .articleImg {
         float: right;
     }
+    .events {
+        max-width: 63rem;
+        border-radius: 1em;
+    }
     /*----- sodaSprings specific css -----*/
     /*----- fishHaven specific css -----*/
     /*----- stormCenter specific css -----*/
