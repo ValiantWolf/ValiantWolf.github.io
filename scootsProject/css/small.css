@@ -34,9 +34,10 @@ html, body {
 }
 #container {
     min-height: 100%;
+    overflow: auto;
 }
 #main {
-    overflow: auto;
+    
     padding-bottom: 2.5rem;
 }
 #footer {
