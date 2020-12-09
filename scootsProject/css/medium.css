@@ -1,0 +1,48 @@
+@media only screen and (min-width: 35rem) {
+    /*----------- BODY --------------*/
+    body {
+        font-size: 1.25rem;
+    }
+    /*----------- HEADER --------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    button {
+        position: static;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-right: 12px;
+    }
+    .logo {
+        margin: 0 auto 0 12px;
+    }
+    /*----------- NAVIGATION --------------*/
+    .navBar {
+        display: flex;
+        padding-top: 0;
+    }
+	.navBar li {
+        display: inline-block;
+        padding: 0px 8px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+	.navBar li:first-child {
+		display: none;
+    }
+    /*----------- MAIN --------------*/
+    /*----------- FOOTER --------------*/
+    .feetBarNav ul li a {
+        font-size: 24px;
+    }
+    /*----- Home specific css -----*/
+    /*----- Rental specific css -----*/
+    /*----- Reservations specific css -----*/
+    /*----- Tour specific css -----*/
+    /*----- Contact specific css -----*/
+} /* end of media query */

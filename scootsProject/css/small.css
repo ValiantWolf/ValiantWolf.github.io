@@ -1,0 +1,181 @@
+:root {
+    --primary-color:#F3EDE2;
+    --secondary-color:#706A6A;
+    --accent1-color:#A72541;
+    --accent2-color:#160066;
+    --hover-over:#861D34;
+
+    --heading-font:'Fenix', serif;             
+    --paragraph-font:'Exo', sans-serif;
+
+    --transitionTiming: all 0.3s ease 0s;
+
+    font-family: var(--paragraph-font);
+}
+/* --primary-color:rgba(243, 237, 226);
+    --secondary-color:rgba(112, 106, 106);
+    --accent1-color:rgba(167, 37, 65);
+    --accent2-color:rgba(22, 0, 102); */
+/*----------- BODY --------------*/
+body {
+    background-color: var(--primary-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+/* STAY AT THE BOTTOM */
+html, body {
+    height: 100%;
+}
+#container {
+    min-height: 100%;
+}
+#main {
+    overflow: auto;
+    padding-bottom: 2.5rem;
+}
+#footer {
+    position: relative;
+    height: 2.5rem;
+    margin-top: -2.5rem;
+    clear: both;
+}
+/*----------- HEADER --------------*/
+header {
+    background-color: var(--secondary-color);
+    font-family: var(--heading-font);
+    padding-bottom:16px;
+    font-size: 17px;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+}
+.logo {
+    display: block;
+    margin: auto auto 0 auto;
+}
+button {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 9px 25px;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transitionTiming);
+}
+button:hover {
+    background-color: var(--hover-over);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+/*----------- NAVIGATION --------------*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navBar {
+    list-style: none;
+    padding-top: 8px;
+}
+.navBar li a {
+    display: block;
+    padding: 8px 10px;
+    color: var(--accent2-color);
+    transition: var(--transitionTiming);
+}
+.navBar a:hover, .feetBarNav a:hover {
+    color:var(--primary-color);
+}
+/* HAM BUTTON */
+.navBar li:first-child {
+	display: block;
+}
+.navBar li {
+    display: none;    
+}
+.responsive li {
+	display: block;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 1rem;
+}
+/*----------- FOOTER --------------*/
+.feetBarMain {
+    box-shadow: 0 -5px 25px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: var(--secondary-color);
+    padding: 20px 0 0 0;
+}
+.feetBarSocial, .feetBarNav, .feetBarContact{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.feetBarSocial ul, .feetBarNav ul, .feetBarContact ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.feetBarSocial ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+.feetBarSocial ul li a {
+    color: var(--accent2-color);
+    font-size: 25px;
+
+}
+.feetBarSocial ul li a i {
+    line-height: 50px;
+}
+.feetBarNav {
+    margin-top: 20px;
+}
+.feetBarNav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.feetBarNav ul li a {
+    transition: var(--transitionTiming);
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    font-size: 20px;
+}
+.feetBarContact ul {
+    padding: 10px;
+}
+.feetBarContact ul li a{
+    text-decoration: none;
+}
+.feetBarBottom {
+    box-shadow: 0 -5px 25px 0 rgba(0, 0, 0, 0.5);
+    background-color: var(--accent2-color);
+    padding: 5px;
+}
+.feetBarBottom p {
+    color: var(--primary-color);
+    font-size: 10px;
+    text-align: center;
+}
+.feetBarBottom a {
+    color: var(--primary-color);
+}
+/*----- Home specific css -----*/
+/*----- Rental specific css -----*/
+/*----- Reservations specific css -----*/
+/*----- Tour specific css -----*/
+/*----- Contact specific css -----*/

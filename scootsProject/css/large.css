@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64rem) {
+    /*----------- BODY --------------*/
+    /*----------- HEADER --------------*/
+    header {
+        justify-content: flex-end;
+        padding: 12px 0;
+        font-size: 24px;
+    }
+    .logo {
+        position: absolute;
+        top: 4px;
+        left: 0;
+    }
+    button {
+        margin-left: 12px;
+    }
+    /*----------- NAVIGATION --------------*/
+    /*----------- MAIN --------------*/
+    /*----------- FOOTER --------------*/
+    /*----- Home specific css -----*/
+    /*----- Rental specific css -----*/
+    /*----- Reservations specific css -----*/
+    /*----- Tour specific css -----*/
+    /*----- Contact specific css -----*/
+} /* end of media query */
