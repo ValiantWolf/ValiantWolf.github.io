@@ -159,6 +159,9 @@ main {
     padding: 10px;
     list-style-type: none;
 }
+.feetBarContact ul li a {
+    color: black;
+}
 .feetBarBottom {
     box-shadow: 0 -5px 25px 0 rgba(0, 0, 0, 0.5);
     background-color: var(--accent2-color);
