@@ -58,7 +58,8 @@ header {
     display: block;
     margin: auto auto 0 auto;
 }
-button {
+.contact {
+    color: black;
     position: absolute;
     top: 60px;
     right: 10px;
@@ -69,7 +70,7 @@ button {
     cursor: pointer;
     transition: var(--transitionTiming);
 }
-button:hover {
+.contact:hover {
     background-color: var(--hover-over);
     color: var(--primary-color);
     transform: scale(1.1);

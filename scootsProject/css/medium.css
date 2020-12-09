@@ -12,7 +12,7 @@
         margin: 0;
         font-size: 20px;
     }
-    button {
+    .contact {
         position: static;
         overflow: hidden;
         white-space: nowrap;
