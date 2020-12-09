@@ -147,13 +147,13 @@ main {
 }
 .feetBarNav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .feetBarNav ul li a {
     transition: var(--transitionTiming);
     color: var(--accent2-color);
     font-family: var(--heading-font);
-    font-size: 20px;
+    font-size: 17px;
 }
 .feetBarContact ul {
     padding: 10px;
@@ -179,3 +179,12 @@ main {
 /*----- Reservations specific css -----*/
 /*----- Tour specific css -----*/
 /*----- Contact specific css -----*/
+/*----- Pupper specific css -----*/
+#pupper figure{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#pupper h2{
+    text-align: center;
+}
