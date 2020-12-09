@@ -157,9 +157,7 @@ main {
 }
 .feetBarContact ul {
     padding: 10px;
-}
-.feetBarContact ul li a{
-    text-decoration: none;
+    list-style-type: none;
 }
 .feetBarBottom {
     box-shadow: 0 -5px 25px 0 rgba(0, 0, 0, 0.5);
@@ -180,9 +178,14 @@ main {
 /*----- Tour specific css -----*/
 /*----- Contact specific css -----*/
 /*----- Pupper specific css -----*/
+#pupper {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 #pupper figure{
-    width:100%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 #pupper h2{
