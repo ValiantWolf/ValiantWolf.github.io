@@ -35,6 +35,9 @@
 	.navBar li:first-child {
 		display: none;
     }
+    .active {
+        width:100%;
+    }
     /*----------- MAIN --------------*/
     /*----------- FOOTER --------------*/
     .feetBarNav ul li a {

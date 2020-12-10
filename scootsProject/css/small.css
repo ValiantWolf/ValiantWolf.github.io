@@ -105,6 +105,13 @@ nav ul {
 .responsive li {
 	display: block;
 }
+.active {
+    border-bottom: solid;
+    width:25%;
+}
+.activeContact {
+    color: var(--primary-color);
+}
 /*----------- MAIN --------------*/
 main {
     padding: 1rem;
