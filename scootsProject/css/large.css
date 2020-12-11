@@ -28,6 +28,15 @@
     }
     /*----- Tour specific css -----*/
     /*----- Contact specific css -----*/
+    .blockIt {
+        display: flex;
+    }
+    .info {
+        max-width: 400px;
+    }
+    .contactField {
+        max-width: 1000px;
+    }
     /*----- Pupper specific css -----*/
     #pupper {
         grid-template-columns: 1fr 1fr 1fr;

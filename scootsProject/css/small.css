@@ -249,6 +249,32 @@ form label.top input:required:valid {
 }
 /*----- Tour specific css -----*/
 /*----- Contact specific css -----*/
+#contactMain {
+    text-align: center;
+    font-size: smaller;
+}
+.contactTop {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 8px;
+    border-radius: 50px;
+}
+.contactTop h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.contactTop p {
+    margin-top: 0;
+    padding-top: 0;
+}
+.info {
+    margin: 16px auto;
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    width: 90%;
+    max-width: 500px;
+}
 /*----- Pupper specific css -----*/
 #pupper {
     margin: 0;

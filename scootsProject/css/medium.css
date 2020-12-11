@@ -48,6 +48,10 @@
     /*----- Reservations specific css -----*/
     /*----- Tour specific css -----*/
     /*----- Contact specific css -----*/
+    .info, .contactField {
+        width: 90%;
+        max-width: 700px;
+    }
     /*----- Pupper specific css -----*/
     #pupper {
         display: grid;

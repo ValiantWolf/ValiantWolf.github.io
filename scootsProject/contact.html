@@ -31,8 +31,36 @@
         </nav>
         <a class="contact activeContact" href="https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/contact.html">Contact Us!</a>
     </header>
-    <main>
-        <h1>Contact</h1>
+    <main id="contactMain">
+        <div class="contactTop">
+            <h1>We have two locations in Cozumel</h1>
+            <p>Where will your next adventure start?</p>
+        </div>
+        <div class="blockIt">
+            <div class="info">
+                <h3>Near Playa del Carmen-Cozumel Ferry dock</h3>
+                <p>Address: 1000 fake street</p>
+                <p>Number: (555) 555-5555</p> 
+                <p>Email: totallyrealemail@fakeEmail.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5439.605743150258!2d-86.95197601316056!3d20.511020994202845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1607716895232!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+            </div>
+            <div class="info">
+                <h3>Near Terminal Puerta Maya</h3>
+                <p>Address: 1000 fake street</p>
+                <p>Number: (555) 555-5555</p> 
+                <p>Email: totallyrealemail@fakeEmail.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.741153531653!2d-86.97600822452654!3d20.47582199555849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1607716980414!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <form action="confirm.html" method="get">
+            <fieldset class="field contactField">
+                <legend>Anymore Questions? Message Us!</legend>
+                <label class="top">Full Name*<input type="text" name="fullName" required pattern="[a-zA-Z\p{L} \.\-]{5,}"></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top"><textarea name="comments" rows="7" cols="35" placeholder="Additional Information or Comments" required></textarea></label>
+            </fieldset>
+            <input type="submit" value="We will contact you soon!" class="submitBtn" onclick="confirm()">
+        </form>
     </main>
 </div>
 </div>
@@ -73,5 +101,6 @@
     <script> WebFont.load({google: {families: ['Fenix', 'Exo']}});</script>
     <!-- Font Awesome is fully open source and is GPL friendly. You can use it for commercial projects, open source projects, or really just about whatever you want. -->
     <script src="https://use.fontawesome.com/a29b6a36eb.js"></script>
+    <script>src="js/confirm.js"</script>
 </body>
 </html>
