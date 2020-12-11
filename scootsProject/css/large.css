@@ -20,6 +20,12 @@
     /*----- Home specific css -----*/
     /*----- Rental specific css -----*/
     /*----- Reservations specific css -----*/
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    form fieldset {
+        max-width: 1000px;
+    }
     /*----- Tour specific css -----*/
     /*----- Contact specific css -----*/
     /*----- Pupper specific css -----*/

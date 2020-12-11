@@ -187,6 +187,66 @@ main {
 /*----- Home specific css -----*/
 /*----- Rental specific css -----*/
 /*----- Reservations specific css -----*/
+form fieldset {
+    margin: 0 auto;
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    width: 90%;
+    max-width: 500px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: left;
+}
+form legend {
+    color: var(--accent2-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    color: var(--accent1-color);
+    font-size: .8rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+form input.submitBtn {
+    border: none;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
 /*----- Tour specific css -----*/
 /*----- Contact specific css -----*/
 /*----- Pupper specific css -----*/

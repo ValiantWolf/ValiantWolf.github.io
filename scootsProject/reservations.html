@@ -32,7 +32,48 @@
         <a class="contact" href="https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/contact.html">Contact Us!</a>
     </header>
     <main>
-        <h1>Reservations</h1>
+        <form action="confirm.html" method="get">
+            <fieldset class="field">
+                <legend>Contact Information</legend>
+                <label class="top">Full Name*<input type="text" name="fullName" required pattern="[a-zA-Z\p{L} \.\-]{5,}"></label>
+                <label class="top">Phone*<input type="tel" name="phone" required pattern="[\W\d]{7,}"></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" ></label>
+                <label class="top">Address<input list="address-type-list" name="addressType"></label>
+                <label class="top">State<input list="state-type-list" name="stateType"></label>
+                <label class="top">Zip Code<input type="number" name="zipCode" ></label>
+                <label class="top">Country<input list="country-type-list" name="countryType"></label>
+            </fieldset>
+            <fieldset class="field">
+                <legend>
+                    Reservation Information
+                </legend>
+                <label class="top">Date of Arrival<input type="date" name="dateOfArrival" required></label>
+                <label class="top">Half or Full Day<input list="halfOrFullDay" name="halfOrFullDay" required></label>
+                <datalist id="halfOrFullDay">
+                    <option value="Half Day">
+                    <option value="Full Day">
+                </datalist>
+                <label class="top">Rental Type<input list="rental-type-list" name="rentalType" required></label>
+                <datalist id="rental-type-list">
+                    <option value="Honda Metropolitan (49cc) - 1 person">
+                    <option value="Honda Dio (110cc) - 2 person">
+                    <option value="Honda PCX150 (149cc) - 2 person"> 
+                    <option value="Honda Pioneer ATV - 4 person">
+                    <option value="4-door Jeep Wrangler - manual with A/C - 5 people max">  
+                    <option value="2-door Jeep Wrangler - open air - manual - 4 people max">  
+                </datalist>
+                <label class="top">How many Vehicles<input list="howManyVehicles" name="howManyVehicles" required></label>
+                <datalist id="howManyVehicles">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3"> 
+                    <option value="4"> 
+                </datalist>
+                <label class="top">Cruise Line<input type="text" name="cruiseLine"></label>
+                <label class="top">Additional Information or Comments<textarea name="comments" rows="7" cols="35"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Thank You For Helping" class="submitBtn" onclick="confirm()">
+        </form> 
     </main>
 </div>
 </div>
@@ -73,5 +114,6 @@
     <script> WebFont.load({google: {families: ['Fenix', 'Exo']}});</script>
     <!-- Font Awesome is fully open source and is GPL friendly. You can use it for commercial projects, open source projects, or really just about whatever you want. -->
     <script src="https://use.fontawesome.com/a29b6a36eb.js"></script>
+    <script>src="js/confirm.js"</script>
 </body>
 </html>
