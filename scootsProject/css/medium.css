@@ -46,6 +46,12 @@
     /*----- Home specific css -----*/
     /*----- Rental specific css -----*/
     /*----- Reservations specific css -----*/
+    form input.submitBtn {
+        max-width: 700px;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%
+    }
     /*----- Tour specific css -----*/
     /*----- Contact specific css -----*/
     .info, .contactField {

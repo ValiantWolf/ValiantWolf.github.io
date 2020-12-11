@@ -26,6 +26,9 @@
     form fieldset {
         max-width: 1000px;
     }
+    form input.submitBtn {
+        max-width: 1000px;
+    }
     /*----- Tour specific css -----*/
     /*----- Contact specific css -----*/
     .blockIt {
