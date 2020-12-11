@@ -188,7 +188,7 @@ main {
 /*----- Rental specific css -----*/
 /*----- Reservations specific css -----*/
 form fieldset {
-    margin: 0 auto;
+    margin: 8px auto;
     border: 1px solid var(--accent1-color);
     border-radius: 10px;
     padding: .5rem 2%;
