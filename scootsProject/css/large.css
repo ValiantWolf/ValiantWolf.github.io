@@ -30,6 +30,33 @@
         max-width: 1000px;
     }
     /*----- Tour specific css -----*/
+    .tourCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .tourSection:hover {
+        box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+    }
+    .tourSection {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
+    }
+    .tourInfo h2 {
+        margin-top: 1em;
+    }
+    .tourInfo {
+        width: 90%;
+        margin: auto;
+    }
+    .tourImg {
+        margin: 0 auto;
+        border-radius: 0 0 1em 1em;
+    }
+    .tourSection:nth-child(even) .tourImg {
+        border-radius: 0 0 1em 1em;
+    }
     /*----- Contact specific css -----*/
     .blockIt {
         display: flex;

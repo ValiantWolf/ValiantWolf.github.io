@@ -220,7 +220,7 @@ footer {
 }
 .townsect:nth-child(even) {
     background-color: #B9CB90;
-}
+} 
 /*----- preston specific css -----*/
 .hero {
     margin: auto;

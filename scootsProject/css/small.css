@@ -248,6 +248,50 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 /*----- Tour specific css -----*/
+#tours {
+    text-align: center;
+}
+.tourCards {
+    display: grid;
+}
+.tourSection {
+    display: grid;
+    padding: 0;
+    margin: 8px 0 0 0;
+    background-color: var(--accent1-color);
+}
+.tourInfo h2 {
+    color: var(--primary-color);
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.tourInfo :nth-child(2) {
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.tourSection:nth-child(even) .tourInfo :nth-child(2) {
+    color: var(--accent2-color);
+}
+.tourText p{
+    margin: 0;
+    padding: 10px;
+    font-size: 17px;
+}
+.tourImg {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+}
+.tourSection:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+.tourSection:nth-child(even) h2{
+    color:var(--accent2-color);
+} 
 /*----- Contact specific css -----*/
 #contactMain {
     text-align: center;
