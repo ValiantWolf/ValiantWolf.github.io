@@ -319,6 +319,11 @@ form label.top input:required:valid {
     width: 90%;
     max-width: 500px;
 }
+/*----- Confirm specific css -----*/
+#confirm {
+    text-align: center;
+    color: var(--accent2-color);
+}
 /*----- Pupper specific css -----*/
 #pupper {
     margin: 0;
