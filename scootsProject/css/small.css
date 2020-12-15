@@ -186,6 +186,88 @@ main {
     color: var(--primary-color);
 }
 /*----- Home specific css -----*/
+.callOfAction {
+    display: grid;
+    text-align: center;
+}
+.homeReservationButton {
+    color: black;
+    padding: 9px 25px;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transitionTiming);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.homeReservationButton:hover {
+    background-color: var(--hover-over);
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+.homeRental {
+    border: 1px solid black;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.homeRental ul, .homeRental h3 {
+    margin: 0;
+}
+.homeRental li:last-child {
+    margin-bottom: 10px;
+}
+.hero {
+    margin: auto;
+    max-width: 100%;
+}
+.heroWeather, .heroWeather img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.weatherSum {
+    background-color:var(--secondary-color);
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+.weatherSum h3 {
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+.weatherTable {
+    table-layout: fixed;
+    width: 100%;
+}
+.righty{
+    font-weight: bold;
+    text-align: right;
+}
+.threeDay {
+    width: 100%;
+    text-align: center;
+}
+.threeTable {
+    width: 100%;
+}
+.threeTable th {
+    background-color: var(--secondary-color);
+}
+.threeTable td {
+    background-color: var(--table-lighter);
+}
+.threeTable, .threeTable td{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.threeTable th {
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;
+}
 /*----- Rental specific css -----*/
 .rentalTable {
     border-collapse: collapse;

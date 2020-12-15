@@ -19,6 +19,9 @@
     /*----------- FOOTER --------------*/
     /*----- Home specific css -----*/
     /*----- Rental specific css -----*/
+    .rentalInfo li {
+        font-size: 17px;
+    }
     /*----- Reservations specific css -----*/
     form label.sbs {
         padding: .4rem 0;

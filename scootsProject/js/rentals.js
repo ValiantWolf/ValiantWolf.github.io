@@ -6,31 +6,24 @@ function handleSelect(ev) {
     switch(rentalType) {
         case 1:
             rentalType = 1;
-            console.log(1);
             break;
         case 2:
             rentalType = 2;
-            console.log(2);
             break;
         case 3:
             rentalType = 3;
-            console.log(3);
             break;
         case 4:
             rentalType = 4;
-            console.log(4);
             break;
         case 5:
             rentalType = 5;
-            console.log(5);
             break;
         case 6:
             rentalType = 6;
-            console.log(6);
             break;
         default:
             rentalType = 1;
-            console.log(1);
             break;
     }
     const data = "https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/data/rental.JSON"

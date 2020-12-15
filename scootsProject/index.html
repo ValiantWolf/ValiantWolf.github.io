@@ -31,7 +31,84 @@
         </nav>
         <a class="contact" href="https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/contact.html">Contact Us!</a>
     </header>
-    <main>
+    <main id="home">
+        <div class="callOfAction">
+            <h1>Make your next adventure one you will never forget.</h1>
+            <a class="homeReservationButton" href="https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/reservations.html">MAKE A RESERVATION NOW!!</a>
+        </div>
+        <div class="homeRental">
+            <h2>Type of Rentals</h2>
+            <h3>Honda Motor Scooters</h3>
+            <ul>
+                <li>Honda Metropolitan (49cc) - 1 person</li>
+                <li>Honda Dio (110cc) - 2 person</li>
+                <li>Honda PCX150 (149cc) - 2 person</li>
+            </ul>
+            <h3>ATV Side-by-Side</h3>
+            <ul>
+                <li>Honda Pioneer 1000</li>
+            </ul>
+            <h3>Jeep Rentals</h3>
+            <ul>
+                <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+                <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <div class="heroWeather">
+                <picture class="hero">
+                    <source srcset="assets/cozumelHero400-300.jpg" media="(min-width:520px)"> 
+                    <img src="assets/cozumelHero300-225.jpg" alt="hero image">
+                </picture>
+                <section class= "weatherSum">
+                    <h3>Weather Summary</h3>
+                    <table class="weatherTable">
+                        <tbody>
+                            <tr>
+                                <td class="righty">Currently:</td>
+                                <td><span id="current"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="righty">Temperature:</td>
+                                <td><span id="temp"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="righty">Humidity:</td>
+                                <td><span id="humi"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <table class="threeTable">
+                <thead>
+                    <tr>
+                        <th colspan="3">Three Day Temperature Highs</th>
+                    </tr>
+                    <tr>
+                        <th><span id="day1"></span></th>
+                        <th><span id="day2"></span></th>
+                        <th><span id="day3"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span id="temp1"></span>°F<br>
+                            <img src="#" alt="" id="weatherIcon1">
+                        </td>
+                        <td>
+                            <span id="temp2"></span>°F<br>
+                            <img src="#" alt="" id="weatherIcon2">
+                        </td>
+                        <td>
+                            <span id="temp3"></span>°F<br>
+                            <img src="#" alt="" id="weatherIcon3">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 </div>
 </div>
@@ -72,5 +149,7 @@
     <script> WebFont.load({google: {families: ['Fenix', 'Exo']}});</script>
     <!-- Font Awesome is fully open source and is GPL friendly. You can use it for commercial projects, open source projects, or really just about whatever you want. -->
     <script src="https://use.fontawesome.com/a29b6a36eb.js"></script>
+    <!-- Weather data was used from https://openweathermap.org/ -->
+    <script src="js/weather.js"></script>
 </body>
 </html>
