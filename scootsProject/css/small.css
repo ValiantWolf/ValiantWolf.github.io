@@ -13,10 +13,6 @@
 
     font-family: var(--paragraph-font);
 }
-/* --primary-color:rgba(243, 237, 226);
-    --secondary-color:rgba(112, 106, 106);
-    --accent1-color:rgba(167, 37, 65);
-    --accent2-color:rgba(22, 0, 102); */
 /*----------- BODY --------------*/
 body {
     background-color: var(--primary-color);
@@ -342,7 +338,6 @@ form fieldset {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    align-content: left;
 }
 form legend {
     color: var(--accent2-color);
@@ -357,6 +352,13 @@ form label.top, form div {
     padding-top: 1rem;
     color: var(--accent1-color);
     font-size: .8rem;
+}
+.top {
+    width: 300px;
+    margin: 0 5px;
+}
+.field {
+    margin-bottom: 16px;
 }
 form label.top input, form label.top select {
     -webkit-appearance: none;
@@ -380,9 +382,8 @@ form input.submitBtn {
     color: var(--primary-color);
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 1rem 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
+    margin: 1rem auto;
+    width: 100%;
 }
 form label.top input:required {
     border-left: red solid 6px;

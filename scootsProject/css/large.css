@@ -32,6 +32,9 @@
     form input.submitBtn {
         max-width: 1000px;
     }
+    .top {
+        width: 250px;
+    }
     /*----- Tour specific css -----*/
     .tourCards {
         display: grid;
