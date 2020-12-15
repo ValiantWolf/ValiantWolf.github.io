@@ -214,6 +214,9 @@ main {
 .homeRental h2 {
     text-align: center;
 }
+.homeRental a {
+    color: black;
+}
 .homeRental ul, .homeRental h3 {
     margin: 0;
 }
