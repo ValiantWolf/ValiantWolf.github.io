@@ -186,6 +186,25 @@ main {
 }
 /*----- Home specific css -----*/
 /*----- Rental specific css -----*/
+.rentalInfo {
+    border: 1px solid black;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.rentalInfo h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.rentalInfo ul {
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-top: 0;
+}
+.rentalInfo li {
+    font-size: 14px;
+}
 /*----- Reservations specific css -----*/
 form fieldset {
     margin: 8px auto;

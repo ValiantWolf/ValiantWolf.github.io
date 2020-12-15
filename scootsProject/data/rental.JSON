@@ -1,4 +1,4 @@
-{"rental":[
+{"rental": [
     {"model":1, "info":{"maxPersons":1, "reservation":{"halfDay":20, "fullDay":30},"walkIn":{"halfDay":25, "fullDay":35}}},
     {"model":2, "info":{"maxPersons":2, "reservation":{"halfDay":30, "fullDay":40},"walkIn":{"halfDay":35, "fullDay":45}}},
     {"model":3, "info":{"maxPersons":2, "reservation":{"halfDay":40, "fullDay":50},"walkIn":{"halfDay":45, "fullDay":55}}},
