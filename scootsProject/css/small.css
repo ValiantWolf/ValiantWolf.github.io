@@ -200,6 +200,7 @@ main {
     transition: var(--transitionTiming);
     margin-bottom: 10px;
     font-size: 20px;
+    font-weight: bold;
 }
 .homeReservationButton:hover {
     background-color: var(--hover-over);
