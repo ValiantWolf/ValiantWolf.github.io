@@ -324,22 +324,6 @@ form label.top input:required:valid {
     text-align: center;
     color: var(--accent2-color);
 }
-/*----- 404 specific css -----*/
-#fourOFourBody {
-    font-size: 2rem;
-    margin: 2em auto;
-    text-align: center;
-}
-#fourOFourMain {
-    padding: 1em;
-    margin: auto;
-    max-width: 80%;
-    border-radius: 1em;
-    background-color: var(--secondary-color);
-}
-#fourOFourMain a {
-    color: var(--accent2-color);
-}
 /*----- Pupper specific css -----*/
 #pupper {
     margin: 0;
