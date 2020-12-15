@@ -31,27 +31,66 @@
         </nav>
         <a class="contact" href="https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/contact.html">Contact Us!</a>
     </header>
-    <main>
-        <h1>Rentals</h1>
-        <label class="top">Rental Types
-            <select name="rental" id="rentalType">
-                <option value="" selected disabled>Select Rental Type  &#9662;</option>
-                <option value="1">Honda Metro Scooter</option>
-                <option value="2">Honda Dio Scooter</option>
-                <option value="3">Honda PCX150 Scooter</option>
-                <option value="4">Honda Pioneer ATV</option>
-                <option value="5">Jeep Wrangler - 4 door</option>
-                <option value="6">Jeep Wrangler - 2 door</option>
-            </select>
-        </label>
-        <button onclick="yes()"></button>
-        <div id="content"></div>
+    <main id="rental">
+        <img src="assets/vehicleStockImg.jpg" alt="vehicle you can choose" id="vehicleRentals">
+        <div class="wrap">
+            <table class="rentalTable rentalTable1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Max Persons and Price(includes Tax)</th>
+                    </tr>
+                    <tr>
+                        <th>Rental Type</th>
+                        <th>Max. Persons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="rental" id="rentalType">
+                            <option value="" selected disabled>Select Rental Type  &#9662;</option>
+                            <option value="1">Honda Metro Scooter</option>
+                            <option value="2">Honda Dio Scooter</option>
+                            <option value="3">Honda PCX150 Scooter</option>
+                            <option value="4">Honda Pioneer ATV</option>
+                            <option value="5">Jeep Wrangler - 4 door</option>
+                            <option value="6">Jeep Wrangler - 2 door</option>
+                            </select>
+                        </td>
+                        <td><span id="persons">NA</span></td>
+                    </tr>
+                  </tbody>
+            </table>
+            <table class="rentalTable rentalTable2">
+                <thead>
+                    <tr>
+                        <th colspan="2">Reservation</th>
+                        <th colspan="2">Walk-In</th>
+                    </tr>
+                    <tr>
+                        <th>Half Day</th>
+                        <th>Full Day</th>
+                        <th>Half Day</th>
+                        <th>Full Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="price1">NA</span></td>
+                        <td><span id="price2">NA</span></td>
+                        <td><span id="price3">NA</span></td>
+                        <td><span id="price4">NA</span></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
         <div class="rentalInfo">
             <h2>Important Information</h2>
             <ul>
                 <li>A $50 security deposit is required to confirm reservations.</li>
                 <li>A valid driver's license is required in hand at time of rental.</li>
                 <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                <li>Half Day is only 3 Hours.</li>
                 <li>Fuel charge not included.</li>
                 <li>Unlimited mileage.</li>
                 <li>Liability insurance is free of charge.</li>
@@ -101,7 +140,6 @@
     <script> WebFont.load({google: {families: ['Fenix', 'Exo']}});</script>
     <!-- Font Awesome is fully open source and is GPL friendly. You can use it for commercial projects, open source projects, or really just about whatever you want. -->
     <script src="https://use.fontawesome.com/a29b6a36eb.js"></script>
-    <script type="text/javascript" src="data/rental.JSON"></script>
-    <script type="text/javascript" src="js/rentals.js"></script>
+    <script src="js/rentals.js"></script>
 </body>
 </html>

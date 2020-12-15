@@ -4,6 +4,7 @@
     --accent1-color:#A72541;
     --accent2-color:#160066;
     --hover-over:#861D34;
+    --table-lighter: #9C9696;
 
     --heading-font:'Fenix', serif;             
     --paragraph-font:'Exo', sans-serif;
@@ -186,6 +187,29 @@ main {
 }
 /*----- Home specific css -----*/
 /*----- Rental specific css -----*/
+.rentalTable {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 25px 0;
+    font-size: 0.9em;
+    background-color: var(--secondary-color);
+    display: inline-table;
+}
+.rentalTable thead tr {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+.rentalTable th {
+    border: 1px solid black;
+    padding: 6px 10px;
+}
+.rentalTable td {
+    border: 1px solid black;
+    padding: 0;
+    background-color: var(--table-lighter);
+    text-align: center;
+}
 .rentalInfo {
     border: 1px solid black;
     max-width: 100%;
@@ -204,6 +228,20 @@ main {
 }
 .rentalInfo li {
     font-size: 14px;
+}
+#vehicleRentals {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrap .rentalTable {
+    width: 100%;
+}
+.rentalTable1 {
+    margin-bottom: 0;
+}
+.rentalTable2 {
+    margin-top: 0;
 }
 /*----- Reservations specific css -----*/
 form fieldset {
