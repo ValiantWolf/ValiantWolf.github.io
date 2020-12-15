@@ -211,6 +211,9 @@ main {
     padding: 0 10px;
     margin-bottom: 10px;
 }
+.homeRental h2 {
+    text-align: center;
+}
 .homeRental ul, .homeRental h3 {
     margin: 0;
 }
