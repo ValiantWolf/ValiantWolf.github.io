@@ -400,6 +400,7 @@ form label.top input:required:valid {
 /*----- Tour specific css -----*/
 #tours {
     text-align: center;
+    margin-bottom: 20px;
 }
 .tourCards {
     display: grid;
