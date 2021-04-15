@@ -26,7 +26,7 @@ function handleSelect(ev) {
             rentalType = 1;
             break;
     }
-    const data = "https://valiantwolf.github.io/ValiantWolf.github.io/scootsProject/data/rental.JSON"
+    const data = "https://scootsProject/data/rental.JSON"
     fetch(data)
     .then((response) => response.json())
     .then((data) => {
