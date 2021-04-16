@@ -1,3 +1,3 @@
 function confirm() {
-    location.href = 'https://scootsProject/confirm.html';
+    location.href = 'https://valiantwolf.github.io/scootsProject/confirm.html';
 }
